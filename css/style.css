@@ -1,0 +1,116 @@
+@font-face {
+    font-family: airport;
+    src: url(../font/Airport.ttf);
+}
+@font-face {
+    font-family: any;
+    src: url(../font/OKScU8ig.ttf);
+}
+body{
+
+    margin:0;
+    padding:0;
+    background:DarkKhaki;   
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+div{
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: inline;
+}
+.header-text{
+    flex-grow: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px LightGray, 2px 2px 3px LightGray;
+    font-family: airport;
+}
+.container{
+    flex-grow: 1;
+    display:flex;   
+    flex-direction: inline;
+}
+.content{
+    font-size: 1.2rem;
+    flex-direction: column;
+    box-shadow: 1px 3px 3px black;
+    border:1px solid ;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding:5px 5px 5px 50px;
+    justify-content: center;
+}
+.menu{
+    display:flex;
+    flex-direction:inline;
+    justify-content: center;
+}
+nav{
+    margin: 15px;
+    position:static;
+    z-index: 1000;
+}
+nav>ul{
+
+    list-style: none;
+    padding:0;
+    width:200px;
+    margin:20px;
+    display:flex;
+}
+nav>ul li{
+    margin-right: 10px;
+    display: inline block;
+    font-family:any;
+    border-radius:10px;
+    height:50px;
+    font-size:1.3rem;
+    margin-bottom:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 1px;
+}
+
+nav>ul li div{
+    margin-right: 20px;
+    font-size: 1.3em;
+    width:90%;
+    text-align:center;
+}
+nav>ul li div:hover{
+    cursor: pointer;
+    color:Brown;
+}
+.news{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction:column;
+    padding-right: 10px;
+}
+footer{
+    height: 40px;
+    text-align:right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.links{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:flex;
+    flex-direction:column;
+    font-size: 1.2em;
+
+}
+a:hover {
+    
+
+    color: Brown;
+  }
